@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "cda5ea56-6b8e-447f-add8-081859259d85",
+		"name": "tabungan-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19094497"
+	},
+	"item": [
+		{
+			"name": "daftar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\": \"imam\",\r\n    \"nik\": \"123\",\r\n    \"no_hp\": \"321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8989/daftar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"daftar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tabung",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nominal\": 1000000,\r\n    \"no_rekening\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8989/tabung",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"tabung"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tarik",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nominal\": 10000,\r\n    \"no_rekening\": \"6493321611\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8989/tarik",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"tarik"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check-balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8989/saldo/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"saldo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check-mutations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8989/mutasi/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"mutasi",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
